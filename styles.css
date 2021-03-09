@@ -151,7 +151,16 @@ main{
     color: #757575;
 }
 
+.main-tables-container{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: content;
+    scroll-snap-type: x proximity;
+    height: 380px;
+}
+
 .main-currency-table{
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -166,7 +175,6 @@ main{
     line-height: 2.3rem;
     font-weight: bold;
     color: var(--bitcoin-orange);
-    text-align: left;
 }
 
 .currency-table--container{
@@ -242,7 +250,6 @@ main{
     line-height: 2.3rem;
     font-weight: bold;
     color: var(--secondary-blue);
-    text-align: left;   
 }
 
 .currency-table--date{
@@ -564,3 +571,4 @@ footer .left ul{
     text-decoration: none;
     color: var(--just-white);
 }
+
